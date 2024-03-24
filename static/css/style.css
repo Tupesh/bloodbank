@@ -1,0 +1,44 @@
+/* Custom CSS to align navbar items to the right */
+@media (min-width: 768px) {
+    .navbar-nav-scroll {
+        flex-direction: row; /* Change flex-direction to row for horizontal alignment */
+    }
+
+    .navbar-nav-scroll .nav-item {
+        margin-left: 8px; /* Add some margin between navbar items */
+    }
+}
+
+
+.navbar{
+    height: 70px;
+    display: flex;
+    margin: 0px auto;
+    border-radius:25px;
+    
+}
+
+.up{
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    color: #FFFFFF;
+    position: absolute;
+    background-color:rgb(94, 112, 112) ;
+    padding: 20px;
+}
+
+.custom-navbar {
+    background-color: rgb(210, 209, 167);
+    margin: 10px;
+}
+
+
+.heading{
+    display: flex;
+    color: red;
+}
+
+.sendRight{
+    align-items: right;
+}
