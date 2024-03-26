@@ -1,3 +1,32 @@
-
 {% extends 'base.html'%}
 {% load static %}
+{% block specific_div %}
+        <div class="bodyImage" style="background-image: url('{% static "images/blood_donation.jpeg" %}')">
+            {% include 'partialtemplates/header.html' %}
+
+
+{% block contents %}
+        <div class="content1">
+            <h3 style="font-size: 40px;">Get started today..</h3>
+            <h1 style="font-size: 60px;">Be the reason for someone's heartbeat.</h1>
+
+            <p class="appearing-text">Our blood bank website's motto is simple yet profound: Saving Lives, One Drop at a Time.
+                With a commitment to ensuring an ample and safe blood supply, our mission is to unite donors and recipients in a
+                lifesaving journey. Through our platform, we strive to promote awareness, encourage donations, and facilitate
+                the vital connection between those in need and those willing to give. Together, we stand as a beacon of hope,
+                compassion, and humanity, making a tangible difference in the lives of countless individuals by providing the
+                gift of life itself.</p>
+
+
+            <p class="second-text">
+                Imagine the profound impact of simple acts of kindness and compassion, like little sparks of joy and
+                hope lighting up the darkness. It's about reaching out with a helping hand, offering unwavering support,
+                and standing as a beacon of strength for those in need. Recognizing the infinite worth in every soul,
+                it's about radiating love, positivity, and hope wherever our paths may lead. Let's embody the purest
+                essence of humanity, creating waves of goodness that wash over weary hearts and change lives forever.
+                Together, let's weave a tapestry of kindness and be the reason someone finds solace and smiles through
+                their tears today.</p>
+        </div>
+
+{% endblock %}
+{% endblock %}
