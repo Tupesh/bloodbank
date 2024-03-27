@@ -63,7 +63,7 @@ ROOT_URLCONF = "bloodbank.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [TEMPLATES_DIR,],
+        "DIRS": ['templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -127,9 +127,10 @@ USE_TZ = True
 STATIC_URL =  "/static/"
 
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
+STATIC_DIRS=[
+    'static/images',
 ]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
