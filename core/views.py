@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import *
 
 # Create your views here.
 def index(request):
@@ -20,7 +21,8 @@ def about(request):
     return render(request, 'about.html')
 
 def bookingForm(request):
-    return render(request, 'bookingForm.html')
+    form = MyForm()
+    return render(request, 'bookingForm.html',{'form': form})
 
 def emergency(request):
     return render(request, 'emergency.html')

@@ -1,11 +1,19 @@
 {% extends 'base.html'%}
 {% load static %}
 {% block specific_div %}
-        <div class="bodyImage" style="background-image: url('{% static "images/blood_donation.jpeg" %}')">
+    
             {% include 'partials/_header.html' %}
 
 
 {% block contents %}
+<style>
+    .bodyClass{
+        background-image: url('{% static "images/blood_donation.jpeg" %}') ;      
+        background-size: cover; /* Scale the background image to cover the entire container */
+        background-repeat: no-repeat; /* Prevent the background image from repeating */
+        background-position: center; 
+    }
+</style>
         <div class="content1">
             <h3 style="font-size: 40px;">Get started today..</h3>
             <h1 style="font-size: 60px;">Be the reason for someone's heartbeat.</h1>

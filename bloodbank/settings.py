@@ -129,6 +129,7 @@ STATIC_URL =  "static/"
 
 STATIC_DIRS=[
     'static/images',
+    'static/javascript',
 ]
 
 # Default primary key field type

@@ -10,7 +10,7 @@
     <title>Blood Bank</title>
     
     <link rel="preload" as="style" href="{% static 'css/style.css' %}" onload="this.rel = 'stylesheet'" />
-    <link rel="preload" as="style" href="{% static 'css/style.css' %}" onload="this.rel = 'stylesheet'"/>
+  
 
 
     
@@ -22,14 +22,15 @@
         crossorigin="anonymous"></script>
    
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed">
-    <script src="{% static 'javascript/index.js' %}"></script>
+     <script src="{% static 'javascript/index.js' %}"></script>
+
 
     <link rel="shortcut icon" type="image/png" href="{%static 'images/titlelogo.png'%}"/>
 
 
 </head>
 
-<body>
+<body class="bodyClass">
     <main>
         {% block specific_div %}
             {% include 'partials/_header.html' %}
